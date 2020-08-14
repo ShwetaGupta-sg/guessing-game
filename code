@@ -1,0 +1,27 @@
+"""
+this is a guessing game 
+"""
+import random
+
+print('hello! what is your name ?')
+name = input()
+
+print('hello ' + name + ' i want to guess u a no btw 1 to 20')
+secret_no = random.randint(1, 20)
+
+for guesstaken in range (1, 7):
+    print('enter a guess no')
+    guess_no = int(input())
+# to check a guess_no = secret_no
+    if guess_no > secret_no:
+        print('you take a greater no')
+    elif guess_no < secret_no: 
+        print('you take a lessser no')
+    else:
+        break
+
+if guess_no == secret_no:
+    print('hello  ' + name + '  you are correct ' +' you tried after ' + str(guesstaken) + ' guesses')
+else:
+    print('hello ' + name + ' you are worng ' + '  the correct guessing is ' + str(secret_no))
+    
