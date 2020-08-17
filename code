@@ -6,7 +6,7 @@ import random
 print('hello! what is your name ?')
 name = input()
 
-print('hello ' + name + ' i want to guess u a no btw 1 to 20')
+print('hello ' + name + ' i want to guess u a number between 1 to 20')
 secret_no = random.randint(1, 20)
 
 for guesstaken in range (1, 7):
@@ -21,7 +21,7 @@ for guesstaken in range (1, 7):
         break
 
 if guess_no == secret_no:
-    print('hello  ' + name + '  you are correct ' +' you tried after ' + str(guesstaken) + ' guesses')
+    print('hello  ' + name + '  you are correct ' +' you tried in' + str(guesstaken) + ' guesses')
 else:
     print('hello ' + name + ' you are worng ' + '  the correct guessing is ' + str(secret_no))
     
