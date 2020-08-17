@@ -14,9 +14,9 @@ for guesstaken in range (1, 7):
     guess_no = int(input())
 # to check a guess_no = secret_no
     if guess_no > secret_no:
-        print('you take a greater no')
+        print('you have taken a greater no')
     elif guess_no < secret_no: 
-        print('you take a lessser no')
+        print('you have taken a smaller no')
     else:
         break
 
